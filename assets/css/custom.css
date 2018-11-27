@@ -536,10 +536,11 @@ input[class=weui-check-success] {
 	width: 100%;
 	text-align: center;
 }
-.data-readings .data-number {
+.data-readings .data-integer {
 	font-size: 80px;
 	font-weight: lighter;
 }
+
 .data-readings .data-circle {
 	border: 2px solid white;
 	width: 150px;
