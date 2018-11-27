@@ -40,13 +40,13 @@
 	<div class="swiper-wrapper data-screen">
 		<div class="swiper-slide bg-success">
 			<div class="data-readings">
-				<p style="letter-spacing: .5em;">当前湿度</p>
+				<p style="letter-spacing: .5em;">当前二氧化碳浓度</p>
 				<div class="data-circle">
-					<span class="data-integer">48</span>.5 %
+					<span class="data-integer">534</span>.2 ppm
 				</div>
 			</div>
 		</div>
-		<div class="swiper-slide"><canvas id="humidity" width="100%" height="70"></canvas></div>
+		<div class="swiper-slide"><canvas id="temperature" width="100%" height="70"></canvas></div>
 	</div>
 	<!-- 如果需要分页器 -->
 	<div class="swiper-pagination"></div>
@@ -64,15 +64,15 @@
 	</a>
 	<a href="/chnfhy-vip/pages/manage/humidity.html" class="weui-grid">
 		<div class="weui-grid__icon">
-			<text class="iconfont icon-settings icon-grid" style="font-size: 2em; color: #09BB07;"></text>
+			<text class="iconfont icon-settings icon-grid" style="font-size: 2em; "></text>
 		</div>
-		<p class="weui-grid__label success">湿度</p>
+		<p class="weui-grid__label ">湿度</p>
 	</a>
 	<a href="/chnfhy-vip/pages/manage/co2.html" class="weui-grid">
 		<div class="weui-grid__icon">
-			<text class="iconfont icon-settings icon-grid" style="font-size: 2em; "></text>
+			<text class="iconfont icon-settings icon-grid" style="font-size: 2em; color: #09BB07;"></text>
 		</div>
-		<p class="weui-grid__label ">二氧化碳</p>
+		<p class="weui-grid__label success">二氧化碳</p>
 	</a>
 	<a href="javascript:;" class="weui-grid">
 		<div class="weui-grid__icon">
@@ -120,18 +120,18 @@
 
 
 <script type="text/javascript">
-var ctx = document.getElementById('humidity').getContext('2d');
+var ctx = document.getElementById('temperature').getContext('2d');
 var chart = new Chart(ctx, {
 	type: 'line',
 	data: {
 		labels: ["8:00", "8:30", "9:00", "9:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30"],
 		datasets: [{
-			label: "湿度",
+			label: "温度",
 			borderColor: 'rgba(255,99,132,1)',
 			backgroundColor: 'rgba(255,99,132,0.2)',
 			borderWidth: 2,
 			pointBackgroundColor: 'rgba(255,255,255,1)',
-			data: [40.3, 42.2, 43.5, 44.5, 45.5, 45.8, 45.3, 45.0, 45.8, 46.9, 48.0, 48.5],
+			data: [22.1, 23.2, 23.5, 23.4, 23.0, 22.9, 23.1, 23.5, 24.0, 24.5, 25.0, 25.2],
 		},
 		],
 	},
