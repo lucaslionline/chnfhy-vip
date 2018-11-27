@@ -42,11 +42,11 @@
 			<div class="data-readings">
 				<p style="letter-spacing: .5em;">当前温度</p>
 				<div class="data-circle">
-					<span class="data-integer">25</span> ℃
+					<span class="data-integer">25</span>.2 ℃
 				</div>
 			</div>
 		</div>
-		<div class="swiper-slide"><canvas id="myBalance" width="100%" height="70"></canvas></div>
+		<div class="swiper-slide"><canvas id="temperature" width="100%" height="70"></canvas></div>
 	</div>
 	<!-- 如果需要分页器 -->
 	<div class="swiper-pagination"></div>
@@ -56,17 +56,17 @@
 
 
 <div class="weui-grids bg-white">
-	<a href="javascript:;" class="weui-grid">
+	<a href="/chnfhy-vip/pages/manage/temperature.html" class="weui-grid">
 		<div class="weui-grid__icon">
-			<text class="iconfont icon-settings icon-grid" style="font-size: 2em;"></text>
+			<text class="iconfont icon-settings icon-grid" style="font-size: 2em; color: #09BB07;"></text>
 		</div>
-		<p class="weui-grid__label">温度</p>
+		<p class="weui-grid__label success">温度</p>
 	</a>
-	<a href="javascript:;" class="weui-grid">
+	<a href="/chnfhy-vip/pages/manage/humidity.html" class="weui-grid">
 		<div class="weui-grid__icon">
-			<text class="iconfont icon-settings icon-grid" style="font-size: 2em;"></text>
+			<text class="iconfont icon-settings icon-grid" style="font-size: 2em; "></text>
 		</div>
-		<p class="weui-grid__label">湿度</p>
+		<p class="weui-grid__label ">湿度</p>
 	</a>
 	<a href="javascript:;" class="weui-grid">
 		<div class="weui-grid__icon">
@@ -120,7 +120,7 @@
 
 
 <script type="text/javascript">
-var ctx = document.getElementById('myBalance').getContext('2d');
+var ctx = document.getElementById('temperature').getContext('2d');
 var chart = new Chart(ctx, {
 	type: 'line',
 	data: {
@@ -171,7 +171,7 @@ var mySwiper = new Swiper ('#cover', {
 			<p class="weui-tabbar__label">地块认购</p>
 		</a>
 
-		<a href="/chnfhy-vip/pages/manage.html" class="weui-tabbar__item weui-bar__item_on">
+		<a href="/chnfhy-vip/pages/manage/temperature.html" class="weui-tabbar__item weui-bar__item_on">
 			<span style="display: inline-block; position: relative;">
 				<text class="iconfont icon-settings success"></text>
 			</span>
