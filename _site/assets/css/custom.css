@@ -60,6 +60,9 @@
  .bg-white {
 	background-color: white;
 }
+.bg-success {
+	background-color: #09BB07;
+}
 
  .container {
  	margin-bottom: 50px;
@@ -515,4 +518,34 @@ input[class=weui-check-success] {
 	padding: .2em .8em;
 	background-color: indianred;
 	color: white;
+}
+
+
+.icon-grid {
+	font-size: 2em;
+	color: #09BB07;
+}
+
+
+.data-screen .swiper-slide {
+	height: 300px;
+	color: white;
+}
+.data-readings {
+	margin-top: 50px;
+	width: 100%;
+	text-align: center;
+}
+.data-readings .data-number {
+	font-size: 80px;
+	font-weight: lighter;
+}
+.data-readings .data-circle {
+	border: 2px solid white;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	line-height: 150px;
+	margin: 1em auto;
+	box-shadow: 0 0 50px #888888;
 }
