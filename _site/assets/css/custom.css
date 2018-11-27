@@ -283,8 +283,9 @@
 
 
 .coupon {
-	background-color: #ddd;
+	background-color: #ccc;
 	color: white;
+	font-size: larger;
 }
 .coupon-overdue {
 	text-decoration: line-through;
