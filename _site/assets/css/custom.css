@@ -297,6 +297,15 @@
 }
 
 
+.nav-login {
+	background-color: white;
+	height: 40px;
+ 	line-height: 40px;
+ 	background-color: white;
+ 	border-bottom: 1px solid #e5e5e5;
+ 	width: 100%;
+}
+
 .nav-orders {
 	background-color: white;
 	height: 40px;
