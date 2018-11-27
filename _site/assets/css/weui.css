@@ -768,7 +768,7 @@
  .weui-form-preview__btn_primary{
  	color:#0BB20C;
  }
- button.weui-form-preview__btn_primary_fill{
+.weui-form-preview__btn_primary_fill{
  	background-color:#0BB20C;
  	color: white;
  }
@@ -1887,8 +1887,8 @@
  }
  .weui-actionsheet__title{
  	position:relative;
- 	height:65px;
- 	padding:0 20px;
+ 	/*height:65px;*/
+ 	padding:0.5em 20px;
  	line-height:1.4;
  	display:-webkit-box;
  	display:-webkit-flex;
@@ -1901,7 +1901,7 @@
  	-webkit-flex-direction:column;
  	flex-direction:column;
  	text-align:center;
- 	font-size:14px;
+ 	/*font-size:14px;*/
  	color:#888;
  	background:#FCFCFD;
  }
@@ -1937,7 +1937,7 @@
  	position:relative;
  	padding:10px 0;
  	text-align:center;
- 	font-size:18px;
+ 	/*font-size:18px;*/
  }
  .weui-actionsheet__cell:before{
  	content:" ";
