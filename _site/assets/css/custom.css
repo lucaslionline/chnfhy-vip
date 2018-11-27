@@ -30,6 +30,9 @@
 	text-overflow: ellipsis;
 }
 
+.smaller {
+	font-size: smaller;
+}
  .x-small {
  	font-size: x-small;
  }
@@ -437,12 +440,15 @@ input[class=weui-check-success] {
 
 /*=============================================================*/
 
-.checkout-preview-info {
-	padding-left: 15px;
-	padding-right: 15px;
-	font-size: smaller;
-	line-height: 1.5rem;
-	margin-top: .5em;
+
+
+.subscribe-preview {
+	background-color: white;
+	position: fixed;
+	bottom: 48px;
+	z-index: 100;
+	width: 100%;
+	padding-top: 1em;
 }
 
 .lots {
@@ -463,15 +469,16 @@ input[class=weui-check-success] {
 	font-size: smaller;
 }
 .lots li.selected {
-	background-color: red;
+	background-color: indianred;
 }
 .lots li.unavailable {
 	background-color: gray;
 }
 
 
-.lots-legend {
-	margin: 0;
+.lots-legend,
+.lots-interested {
+	margin: 0 15px;
 	padding: 0;
 }
 .lots-legend li {
@@ -496,5 +503,16 @@ input[class=weui-check-success] {
 	background-color: gray;
 }
 .lots-legend-selected {
-	background-color: red;
+	background-color: indianred;
+}
+
+.lots-interested li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 1em;
+	border-radius: 4px;
+	text-align: center;
+	padding: .2em .8em;
+	background-color: indianred;
+	color: white;
 }

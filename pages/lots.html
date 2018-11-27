@@ -6,7 +6,7 @@ title: "地块认购"
 <ul class="lots">
 	<li>1</li>
 	<li>2</li>
-	<li>3</li>
+	<li class="selected">3</li>
 	<li>4</li>
 	<li>5</li>
 	<li>6</li>
@@ -24,9 +24,9 @@ title: "地块认购"
 	<li>18</li>
 	<li>19</li>
 	<li>20</li>
-	<li>21</li>
+	<li class="unavailable">21</li>
 	<li>22</li>
-	<li>23</li>
+	<li class="unavailable">23</li>
 	<li>24</li>
 	<li>25</li>
 	<li>26</li>
@@ -42,7 +42,7 @@ title: "地块认购"
 	<li>36</li>
 	<li>37</li>
 	<li>38</li>
-	<li>39</li>
+	<li class="unavailable">39</li>
 	<li>40</li>
 	<li>41</li>
 	<li>42</li>
@@ -59,9 +59,9 @@ title: "地块认购"
 	<li>53</li>
 	<li>54</li>
 	<li>55</li>
-	<li>56</li>
+	<li class="unavailable">56</li>
 	<li>57</li>
-	<li>58</li>
+	<li class="unavailable">58</li>
 	<li>59</li>
 	<li>60</li>
 	<li>61</li>
@@ -75,7 +75,7 @@ title: "地块认购"
 	<li>69</li>
 	<li>70</li>
 	<li>71</li>
-	<li>72</li>
+	<li class="unavailable">72</li>
 	<li>73</li>
 	<li>74</li>
 	<li>75</li>
@@ -93,14 +93,14 @@ title: "地块认购"
 	<li>87</li>
 	<li>88</li>
 	<li>89</li>
-	<li>90</li>
+	<li class="unavailable">90</li>
 	<li>91</li>
 	<li>92</li>
 	<li>93</li>
-	<li>94</li>
+	<li class="unavailable">94</li>
 	<li>95</li>
 	<li>96</li>
-	<li>97</li>
+	<li class="unavailable">97</li>
 	<li>98</li>
 	<li>99</li>
 	<li>100</li>
@@ -109,24 +109,35 @@ title: "地块认购"
 
 
 
-<!--================= 确认 =================-->
-<div style="height: 100px;"></div>
+<!--================= 确认 ===================-->
+<div style="height: 150px;"></div>
 
 
-<div class="checkout-preview">
-	<div class="checkout-preview-info">
-		<ul class="lots-legend">
-			<li><span class="lots-legend-available"></span>可选地块</li>
-			<li><span class="lots-legend-unavailable"></span>不可选地块</li>
-			<li><span class="lots-legend-selected"></span>已选地块</li>
-		</ul>
+<div class="subscribe-preview">
+	<ul class="lots-legend smaller">
+		<li><span class="lots-legend-available"></span>可选地块</li>
+		<li><span class="lots-legend-unavailable"></span>不可选地块</li>
+		<li><span class="lots-legend-selected"></span>已选地块</li>
+	</ul>
 
-		您选择的地块
 
-		
-	</div>
+	<p style="margin: 1em 15px 0.5em 15px; font-size: smaller;">您选择的地块：</p>
 
-	
+	<ul class="lots-interested smaller">
+		<a href="javascript:void(0);">
+			<li>
+				<text class="iconfont icon-location"></text>
+				<p>11</p>
+			</li>
+		</a>
+		<a href="javascript:void(0);">
+			<li>
+				<text class="iconfont icon-location"></text>
+				<p>3</p>
+			</li>
+		</a>
+	</ul>
+
 
 	<div class="weui-btn-area">
 		<a href="#" class="weui-btn weui-btn_primary">确认认购</a>
